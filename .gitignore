@@ -1,0 +1,10 @@
+*.pyc
+*.png
+*.ckpt
+*.wandb
+*.log
+*.db
+*.keras
+*.h5
+*.hdf5
+/runs/wandb

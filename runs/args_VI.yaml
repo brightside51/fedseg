@@ -1,0 +1,28 @@
+model: fedseg
+runV: VI
+verbose: true
+base_fp: /nas-ctm01/homes/pfsousa
+args_fp: /nas-ctm01/homes/pfsousa/fedseg/runs/args_VI.yaml
+script_fp: /nas-ctm01/homes/pfsousa/fedseg
+logs_fp: /nas-ctm01/homes/pfsousa/fedseg/logs/run_VI
+num_gpu: 1
+save_interval: 1
+loss_interval: 1
+log_interval: 1
+save_img: 2
+log_method: wandb
+seed: 1234
+resunet:
+  resume: false
+  resume_ckpt: /nas-ctm01/homes/pfsousa/fedseg/logs/run_VI/VI_latest.ckpt
+  num_steps: 10
+  num_epochs: 50
+  grad_clip: 1.0
+  grad_accum: 1
+  lr_base: 0.0001
+  lr_decay: 0.5
+  lr_step: 250
+  lr_min: 1.0e-06
+  lr_patience: 5
+  es_patience: 8
+  

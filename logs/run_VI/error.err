@@ -1,0 +1,19 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/nas-ctm01/homes/pfsousa/.conda/envs/meddiff3/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/nas-ctm01/homes/pfsousa/.conda/envs/meddiff3/lib/python3.8/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+wandb: Currently logged in as: brightside51. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: wandb version 0.27.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.6
+wandb: Run data is saved locally in /nas-ctm01/homes/pfsousa/fedseg/runs/wandb/run-20260520_130224-g184qwj5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run VI (13:02 20/05/2026)
+wandb: ⭐️ View project at https://wandb.ai/brightside51/fedseg
+wandb: 🚀 View run at https://wandb.ai/brightside51/fedseg/runs/g184qwj5
+/nas-ctm01/homes/pfsousa/.conda/envs/meddiff3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/nas-ctm01/homes/pfsousa/fedseg/train/train_resunet.py:149: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  train_fig = plt.figure(figsize=(30, 10))
+slurmstepd-01.ctm-deep-04: error: *** JOB 33388 ON 01.ctm-deep-04 CANCELLED AT 2026-05-20T13:07:03 ***

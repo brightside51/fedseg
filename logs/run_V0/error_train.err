@@ -1,0 +1,63 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/nas-ctm01/homes/pfsousa/.conda/envs/meddiff3/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/nas-ctm01/homes/pfsousa/.conda/envs/meddiff3/lib/python3.8/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+wandb: Currently logged in as: brightside51. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: wandb version 0.27.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.6
+wandb: Run data is saved locally in /nas-ctm01/homes/pfsousa/fedseg/runs/wandb/run-20260520_130822-60w0vvkh
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run V0 (13:08 20/05/2026)
+wandb: ⭐️ View project at https://wandb.ai/brightside51/fedseg
+wandb: 🚀 View run at https://wandb.ai/brightside51/fedseg/runs/60w0vvkh
+/nas-ctm01/homes/pfsousa/.conda/envs/meddiff3/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/nas-ctm01/homes/pfsousa/fedseg/train/train_resunet.py:149: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  train_fig = plt.figure(figsize=(30, 10))
+wandb: - 6.278 MB of 6.337 MB uploadedwandb: \ 6.278 MB of 6.337 MB uploadedwandb: | 6.278 MB of 6.337 MB uploadedwandb: / 6.278 MB of 6.337 MB uploadedwandb: - 6.337 MB of 6.337 MB uploadedwandb: \ 6.337 MB of 6.916 MB uploadedwandb: | 6.916 MB of 6.916 MB uploadedwandb: / 6.916 MB of 6.916 MB uploadedwandb: - 6.916 MB of 6.916 MB uploadedwandb: 
+wandb: Run history:
+wandb:        train/batch ▄▃▃▅▄▇▆▁▇▃▂▄▄▆▅█▇▂▁▄▃▅▅▇▆▂█▃▂▅▄▇▆▁▇▃▂▄▄▆
+wandb:     train/combined █▇▆▅▄▄▃▃▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:         train/dice ▁▃▂▂▄▄▆▅▆▇▇▇▇▇▇█▇███████████████████████
+wandb:        train/epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇████
+wandb:         train/loss █▆▇▇▅▅▃▄▃▂▂▂▂▂▂▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: train_avg/combined █▇▆▅▄▄▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:     train_avg/dice ▁▂▂▃▃▄▅▅▆▆▇▇▇▇▇▇████████████████████████
+wandb:    train_avg/epoch ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     train_avg/loss █▇▇▆▆▅▄▄▃▃▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:          val/batch ▅▂▄▆▇▅▆█▂▄▁▃▅▆█▅▇▁▃▅▂▃▅▇▁▆▇▂▃▅▂▄▆▇▂▆█▂▄▆
+wandb:       val/combined █▇▆▅▄▄▃▃▂▂▂▂▁▁▁▁▁▂▁▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:           val/dice ▁▁▂▂▃▄▄▄▆▇▇▇▇▇▇█▇▇██▇███▇██▇████████████
+wandb:          val/epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:           val/loss ██▇▇▆▅▅▅▃▂▂▂▂▂▂▁▂▂▁▁▂▁▁▁▂▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   val_avg/combined █▇▆▅▄▄▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:       val_avg/dice ▁▂▂▃▃▄▅▅▆▆▇▇▇▇▇▇████████████████████████
+wandb:      val_avg/epoch ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:       val_avg/loss █▇▇▆▆▅▄▄▃▃▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:        train/batch 286
+wandb:     train/combined 0.05061
+wandb:         train/dice 0.99639
+wandb:        train/epoch 43
+wandb:         train/loss 0.00361
+wandb: train_avg/combined 0.07128
+wandb:     train_avg/dice 0.99502
+wandb:    train_avg/epoch 43
+wandb:     train_avg/loss 0.00498
+wandb:          val/batch 25
+wandb:       val/combined 0.15785
+wandb:           val/dice 0.98122
+wandb:          val/epoch 43
+wandb:           val/loss 0.01878
+wandb:   val_avg/combined 0.35567
+wandb:       val_avg/dice 0.97309
+wandb:      val_avg/epoch 43
+wandb:       val_avg/loss 0.02691
+wandb: 
+wandb: 🚀 View run V0 (13:08 20/05/2026) at: https://wandb.ai/brightside51/fedseg/runs/60w0vvkh
+wandb: ⭐️ View project at: https://wandb.ai/brightside51/fedseg
+wandb: Synced 6 W&B file(s), 88 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260520_130822-60w0vvkh/logs

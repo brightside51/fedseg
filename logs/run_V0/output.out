@@ -1,0 +1,16 @@
+no change     /usr/local/miniconda3/condabin/conda
+no change     /usr/local/miniconda3/bin/conda
+no change     /usr/local/miniconda3/bin/activate
+no change     /usr/local/miniconda3/bin/deactivate
+no change     /usr/local/miniconda3/etc/profile.d/conda.sh
+no change     /usr/local/miniconda3/etc/fish/conf.d/conda.fish
+no change     /usr/local/miniconda3/shell/condabin/Conda.psm1
+no change     /usr/local/miniconda3/shell/condabin/conda-hook.ps1
+no change     /usr/local/miniconda3/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /usr/local/miniconda3/etc/profile.d/conda.csh
+no change     /nas-ctm01/homes/pfsousa/.bashrc
+no change     /nas-ctm01/homes/pfsousa/.zshrc
+no change     /nas-ctm01/homes/pfsousa/.config/fish/config.fish
+no change     /nas-ctm01/homes/pfsousa/.xonshrc
+no change     /nas-ctm01/homes/pfsousa/.tcshrc
+No action taken.
