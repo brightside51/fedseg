@@ -43,6 +43,7 @@ sys.path.append('/nas-ctm01/homes/pfsousa/fedseg')
 from run_parser import run_parser
 sys.path.append('/nas-ctm01/homes/pfsousa/fedseg/resunet')
 from resunet import ResidualUNet, dice_coef, dice_loss, combined_loss
+from bayo_resunet import BayoResidualUNet, dice_coef, dice_loss
 from keras_resunet import keras_residualUNet
 
 os.environ['HDF5_USE_FILE_LOCKING'] = 'FALSE'
@@ -161,7 +162,8 @@ def test_resunet(
     # --------------------------------------------------------------------------------------------
 
     # 2D Segmentation Residual U-Net Loading
-    model = ResidualUNet(data_args, run_args)
+    #model = ResidualUNet(data_args, run_args)
+    model = BayoResidualUNet()
     model.load_state_dict(torch.load(run_args.test.resume_ckpt,
                                 map_location = run_args.device))
     model.to(run_args.device); model.eval()
@@ -198,6 +200,7 @@ def test_resunet(
                 mask_slice = mask[:, slice_idx, :, :].unsqueeze(0)
                 pred_mask = model(ct_slice).detach().cpu().numpy()
                 pred_mask = torch.Tensor(postprocess(pred_mask[0, 0]))
+                #pred_mask = torch.Tensor(pred_mask[0, 0])
                 pred_mask = pred_mask.unsqueeze(0).unsqueeze(0).to(run_args.device)
                 #pred_mask = model(ct_slice[0].unsqueeze(-1).numpy())
                 #pred_mask = torch.Tensor(pred_mask.numpy()).permute(0, 3, 1, 2)

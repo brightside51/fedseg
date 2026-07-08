@@ -14,3 +14,10 @@ no change     /nas-ctm01/homes/pfsousa/.config/fish/config.fish
 no change     /nas-ctm01/homes/pfsousa/.xonshrc
 no change     /nas-ctm01/homes/pfsousa/.tcshrc
 No action taken.
+Loading ARGUMENT PARSER | /nas-ctm01/homes/pfsousa/data/covid_jun2020/V0_args.yaml
+Loading ARGUMENT PARSER | /nas-ctm01/homes/pfsousa/fedseg/runs/args_V0.yaml
+2.4.1
+True
+['sm_50', 'sm_60', 'sm_61', 'sm_70', 'sm_75', 'sm_80', 'sm_86', 'sm_37', 'sm_90', 'compute_37']
+/nas-ctm01/homes/pfsousa/data/covid_jun2020
+Dataset Length: 201

@@ -77,12 +77,12 @@ train_resunet(data_args, data_args, run_args, run_logger)
 # TESTING SETUP
 
 # Argument Initialisation
-data_args = data_parser(dataset = 'lidc_idri', dataV = 'Vall', save = True)
+data_args = data_parser(dataset = 'covid_jun2020', dataV = 'V0', save = True)
 run_args = run_parser(model = 'fedseg', runV = 'V0', save = True)
 print(torch.__version__); print(torch.cuda.is_available()); print(torch.cuda.get_arch_list())
 
 # Dataset Initialisation
-ds = get_ds(data_args, mode = 'train')
+ds = get_ds(data_args, mode = 'val')
 print(f"Dataset Length: {len(ds)}")
 #ct, mask = ds.__getitem__(0)
 #print(ct.shape); print(mask.shape)

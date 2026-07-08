@@ -26,7 +26,8 @@ resunet:
   lr_patience: 5
   es_patience: 8
 test:
-  resume_ckpt: /nas-ctm01/homes/pfsousa/fedseg/logs/run_V0/V0_best.ckpt
+  #resume_ckpt: /nas-ctm01/homes/pfsousa/fedseg/logs/run_V0/V0_best.ckpt
+  resume_ckpt: /nas-ctm01/homes/pfsousa/fedseg/logs/run_V0/V0_localfederated.pt
   save_img: false
   save_fp: /nas-ctm01/datasets/public/covid_jun2020/pred_mask
-  save_interval: 1000
+  save_interval: 10
